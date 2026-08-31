@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #333;
+}
+header {
+    background-color: #1f3c88;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+nav {
+    background-color: #162447;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.container {
+    width: 80%;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+h1 {
+    margin-bottom: 10px;
+}
+h2 {
+    color: #1f3c88;
+}
+.card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+.button {
+    display: inline-block;
+    background-color: #1f3c88;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+.button:hover {
+    background-color: #162447;
+}
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #1f3c88;
+}
+input {
+    padding: 8px;
+    margin: 5px;
+}
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    background-color: #162447;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+th {
+    background-color: #1f3c88;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    vertical-align: middle;
+}
+th:nth-child(1) {
+    width: 18%;
+}
+th:nth-child(2) {
+    width: 34%;
+}
+th:nth-child(3) {
+    width: 12%;
+}
+th:nth-child(4) {
+    width: 14%;
+}
+th:nth-child(5) {
+    width: 22%;
+}
+td img {
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+}
+.cv-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+.cv-header h1 {
+    color: #1f3c88;
+    margin-bottom: 5px;
+}
+.cv-photo {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 3px solid #1f3c88;
+}
+.card h3 {
+    color: #1f3c88;
+    margin-bottom: 5px;
+}
+.card li {
+    margin-bottom: 8px;
+}
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}

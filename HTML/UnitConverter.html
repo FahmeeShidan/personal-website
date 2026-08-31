@@ -1,0 +1,76 @@
+<!--
+Name: Muhammad Fahmee Bin Shidan
+Matric no: DX252540SPDJ01
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Unit Converter</h1>
+        <p>Simple unit conversion tool</p>
+    </header>
+    <nav>
+        <a href="Main.html">Home</a>
+        <a href="PersonalInfo.html">Personal Information</a>
+        <a href="Tools.html">Useful Tools</a>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h2>Unit Converter</h2>
+            <p>
+                Enter a value and choose a conversion.
+            </p>
+            <p>
+                <label>Enter Value:</label><br>
+                <input type="number" id="value">
+            </p>
+            <p>
+                <button onclick="cmToMetre()">cm to metre</button>
+                <button onclick="metreToCm()">metre to cm</button>
+                <button onclick="metreToKm()">metre to km</button>
+                <button onclick="kmToMetre()">km to metre</button>
+            </p>
+            <p>
+                <label>Result:</label><br>
+                <input type="text" id="result" readonly>
+            </p>
+        </div>
+        <div class="card">
+            <a href="Tools.html" class="button">Back to Useful Tools</a>
+        </div>
+    </div>
+    <footer>
+        <p>© 2026 Muhammad Fahmee Bin Shidan</p>
+    </footer>
+    <script>
+        function cmToMetre() {
+            let value = Number(document.getElementById("value").value);
+            let result = value / 100;
+            document.getElementById("result").value =
+                value + " cm = " + result + " metre";
+        }
+        function metreToCm() {
+            let value = Number(document.getElementById("value").value);
+            let result = value * 100;
+            document.getElementById("result").value =
+                value + " metre = " + result + " cm";
+        }
+        function metreToKm() {
+            let value = Number(document.getElementById("value").value);
+            let result = value / 1000;
+            document.getElementById("result").value =
+                value + " metre = " + result + " km";
+        }
+        function kmToMetre() {
+            let value = Number(document.getElementById("value").value);
+            let result = value * 1000;
+            document.getElementById("result").value =
+                value + " km = " + result + " metre";
+        }
+    </script>
+</body>
+</html>

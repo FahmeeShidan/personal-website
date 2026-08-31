@@ -1,0 +1,73 @@
+<!--
+Name: Muhammad Fahmee Bin Shidan
+Matric no: DX252540SPDJ01
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Checker</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>BMI Checker</h1>
+        <p>Calculate your Body Mass Index</p>
+    </header>
+    <nav>
+        <a href="Main.html">Home</a>
+        <a href="PersonalInfo.html">Personal Information</a>
+        <a href="Tools.html">Useful Tools</a>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h2>BMI Checker</h2>
+            <p>
+                Enter your weight and height to calculate your BMI.
+            </p>
+            <p>
+                <label>Weight (kg):</label><br>
+                <input type="number" id="weight" step="0.1">
+            </p>
+            <p>
+                <label>Height (m):</label><br>
+                <input type="number" id="height" step="0.01">
+            </p>
+            <p>
+                <button onclick="calculateBMI()">Calculate BMI</button>
+                <button onclick="clearBMI()">Clear</button>
+            </p>
+            <p>
+                <label>BMI:</label><br>
+                <input type="text" id="bmi" readonly>
+            </p>
+        </div>
+        <div class="card">
+            <a href="Tools.html" class="button">Back to Useful Tools</a>
+        </div>
+    </div>
+    <footer>
+        <p>© 2026 Muhammad Fahmee Bin Shidan</p>
+    </footer>
+    <script>
+        function calculateBMI() {
+
+            let weight = Number(document.getElementById("weight").value);
+            let height = Number(document.getElementById("height").value);
+
+            if (weight <= 0 || height <= 0) {
+                document.getElementById("bmi").value = "Enter valid values";
+            } else {
+                let bmi = weight / (height * height);
+
+                document.getElementById("bmi").value = bmi.toFixed(2);
+            }
+        }
+        function clearBMI() {
+
+            document.getElementById("weight").value = "";
+            document.getElementById("height").value = "";
+            document.getElementById("bmi").value = "";
+        }
+    </script>
+</body>
+</html>
